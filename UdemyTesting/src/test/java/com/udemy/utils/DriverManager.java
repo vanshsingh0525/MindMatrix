@@ -11,18 +11,11 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 
 import java.time.Duration;
 
-/**
- * DriverManager - Thread-safe WebDriver management for parallel test execution.
- * This class is COMMON for all team members. DO NOT MODIFY unless discussed with team.
- */
+
 public class DriverManager {
 
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
-    /**
-     * Get the WebDriver instance for the current thread.
-     * Creates a new driver if one doesn't exist.
-     */
     public static WebDriver getDriver() {
         if (driver.get() == null) {
             initializeDriver();
@@ -30,11 +23,8 @@ public class DriverManager {
         return driver.get();
     }
 
-    /**
-     * Initialize WebDriver based on configuration settings.
-     */
     private static void initializeDriver() {
-        // Ensure any machine-level proxy settings don't break driver downloads
+        
         System.setProperty("java.net.useSystemProxies", "false");
         System.clearProperty("http.proxyHost");
         System.clearProperty("http.proxyPort");
@@ -97,9 +87,7 @@ public class DriverManager {
         driver.get().manage().window().maximize();
     }
 
-    /**
-     * Quit the WebDriver and remove from ThreadLocal.
-     */
+ 
     public static void quitDriver() {
         if (driver.get() != null) {
             driver.get().quit();

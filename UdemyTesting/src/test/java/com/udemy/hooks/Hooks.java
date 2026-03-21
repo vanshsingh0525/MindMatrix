@@ -22,7 +22,7 @@ public class Hooks {
         System.out.println("Starting Scenario: " + scenario.getName());
         System.out.println("Tags: " + scenario.getSourceTagNames());
         System.out.println("========================================");
-        // Ensure driver is created
+        
         DriverManager.getDriver();
     }
 
@@ -56,7 +56,7 @@ public class Hooks {
                     jsExecutor.executeScript("window.sessionStorage.clear(); window.localStorage.clear();");
                 }
             } catch (Exception ignored) {
-                // Some browsers block storage on about:blank or data URLs
+                
             }
         }
     }
