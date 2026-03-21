@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Team 2 Test Suite">
+
+    <test name="Team 2 Tests">
+        <classes>
+            <class name="com.udemy.runners.Team2Runner"/>
+        </classes>
+    </test>
+
+</suite>

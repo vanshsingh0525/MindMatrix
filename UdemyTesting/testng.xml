@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Udemy Test Suite" parallel="tests" thread-count="4">
+
+    <!-- Course Search & Detail Validation (Team 1) -->
+    <test name="Course Search Tests" preserve-order="true">
+        <classes>
+            <class name="com.udemy.runners.CourseSearchRunner"/>
+        </classes>
+    </test>
+
+    <!-- Team 2 Tests -->
+    <test name="Team 2 Tests" preserve-order="true">
+        <classes>
+            <class name="com.udemy.runners.Team2Runner"/>
+        </classes>
+    </test>
+
+    <!-- Team 3 Tests -->
+    <test name="Team 3 Tests" preserve-order="true">
+        <classes>
+            <class name="com.udemy.runners.Team3Runner"/>
+        </classes>
+    </test>
+
+    <!-- Team 4 Tests -->
+    <test name="Team 4 Tests" preserve-order="true">
+        <classes>
+            <class name="com.udemy.runners.Team4Runner"/>
+        </classes>
+    </test>
+
+</suite>

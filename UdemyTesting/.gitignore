@@ -1,0 +1,87 @@
+# =============================================================
+# Udemy Test Automation - Git Ignore
+# =============================================================
+
+# Build outputs
+/target/
+target/
+*.class
+
+# Maven
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+mvnw
+mvnw.cmd
+
+# Test output - Keep structure but ignore generated files
+/test-output/**/*.html
+/test-output/**/*.xml
+/test-output/**/*.json
+/test-output/**/*.png
+/test-output/**/*.gif
+/test-output/**/*.jpg
+/test-output/**/*.css
+/test-output/**/*.js
+/test-output/**/logs/
+!test-output/.gitkeep
+!test-output/reports/.gitkeep
+!test-output/screenshots/.gitkeep
+
+# Logs
+*.log
+/logs/
+
+# IDE - Eclipse
+.project
+.classpath
+.settings/
+.apt_generated/
+.factorypath
+.springBeans
+.sts4-cache
+
+# IDE - IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# IDE - NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# IDE - VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Kotlin/Java tooling
+.kotlin
+/bin/
+/coverage/
+/jacoco.exec
+/jacoco-ut.exec
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*~
+
+# Allure reports
+/allure-results/
+/allure-report/
