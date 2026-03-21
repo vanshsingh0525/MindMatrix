@@ -56,7 +56,7 @@ public class Hooks {
                     jsExecutor.executeScript("window.sessionStorage.clear(); window.localStorage.clear();");
                 }
             } catch (Exception ignored) {
-                // Some browsers block storage on about:blank or data URLs
+                
             }
         }
     }

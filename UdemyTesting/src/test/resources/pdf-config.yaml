@@ -1,0 +1,40 @@
+# =====================================================
+# PDF REPORT CONFIGURATION
+# =====================================================
+
+# Report Title
+title: Udemy Test Automation Report
+
+# Report Subtitle
+reportName: Cucumber BDD Test Execution Report
+
+# Date Time Pattern for Report
+dateFormat: yyyy-MM-dd
+timeFormat: HH:mm:ss
+
+# Display Settings
+displayFeature: true
+displayScenario: true
+displayDetailed: true
+displayExpanded: true
+displayAttached: true
+
+# Dashboard Settings
+dashboard:
+  title: Test Execution Dashboard
+
+# Colors (RGB values)
+passColor: [0, 128, 0]
+failColor: [255, 0, 0]
+skipColor: [255, 165, 0]
+
+# Page Settings
+pageSize: A4
+pageOrientation: PORTRAIT
+
+# Margins (in points)
+margins:
+  top: 50
+  bottom: 50
+  left: 40
+  right: 40
