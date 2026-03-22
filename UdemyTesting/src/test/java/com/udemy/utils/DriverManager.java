@@ -15,7 +15,7 @@ import java.time.Duration;
  * DriverManager - Thread-safe WebDriver management for parallel test execution.
  * This class is COMMON for all team members. DO NOT MODIFY unless discussed with team.
  */
-public class DriverManager {
+public class DriverManager { 
 
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
