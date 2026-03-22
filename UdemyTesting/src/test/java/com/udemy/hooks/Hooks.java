@@ -14,7 +14,7 @@ public class Hooks {
     static {
         Runtime.getRuntime().addShutdownHook(new Thread(DriverManager::quitDriver));
     }
-
+ 
     
     @Before
     public void setUp(Scenario scenario) {

@@ -9,7 +9,7 @@ import org.testng.annotations.DataProvider;
         glue = {
                 "com.udemy.stepdefinitions.Team4",
                 "com.udemy.hooks"
-        },
+        }, 
         tags = "@SearchFunctionality or @FilterValidation or @CourseValidation",
         plugin = {
                 "pretty",
